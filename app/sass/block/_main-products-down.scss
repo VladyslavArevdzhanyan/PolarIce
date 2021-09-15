@@ -1,0 +1,91 @@
+.main-products-down {
+    padding-top: 100px;
+    background: var(--white);
+    &-flex {
+        display: flex;
+        align-items: flex-start;
+        &-block-h2 {
+            font-weight: 500;
+            font-size: 44.2px;
+            line-height: 52px;
+            color: var(--black);
+        }
+        &-block-p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            letter-spacing: 0.01em;
+            color: var(--black);
+            opacity: 0.7;
+            max-width: 500px;
+            padding-top: 20px;
+        }
+        &-block-1 {
+            padding-top: 30px;
+        }
+        &-block-1, &-block-2 {
+            margin-bottom: 15px;
+        }
+        &-block-1-background, &-block-2-background, &-block-3-background {
+            background-color: var(--white);
+            width: 30px;
+            height: 30px;
+            display: flex;
+            &-p {
+                margin-left: 15px;
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 26px;
+                color: var(--black);
+            }
+            &-img {
+                margin: auto;
+            }
+        }
+        &-block-1.flex, &-block-2.flex, &-block-3.flex {
+            display: flex;
+            align-items: center;
+        }
+        &-img {
+            border-radius: 35px;
+            margin-right: 135px;
+            padding-bottom: 1px;
+            margin-bottom: -70px;
+        }
+        &-block-links {
+            display: flex;
+            align-items: center;
+            padding-top: 40px;
+        }
+    }
+}
+
+
+@media (max-width: 890px) {
+    .main-products-down {
+        margin-top: 100px;
+        &-flex {
+            flex-direction: column;
+            align-items: center;
+            &-img {
+                margin-right: 0;
+                margin-bottom: 50px;
+            }
+            &-block-h2 {
+                text-align: center;
+                padding-bottom: 20px;
+            }
+            &-block-p {
+                padding: 0 20px;
+                text-align: center;
+            }
+            &-block-1.flex, &-block-2.flex, &-block-3.flex {
+                display: none;
+            }
+            &-block-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

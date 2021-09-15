@@ -1,0 +1,144 @@
+.footer {
+    background: var(--black);
+    padding-bottom: 50px;
+    &-logo {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    &-flex {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        &-block-1-p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.01em;
+            color: var(--white);
+            opacity: 0.7;
+            max-width: 207px;
+            &-2 {
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 14px;
+                color: var(--white);
+                padding-top: 25px;
+            }
+        }
+        &-block-1-media {
+            padding-top: 20px;
+            &-link {
+                text-decoration: none;
+                margin-right: 7px;
+            }
+        }
+        &-block-2-list {
+            list-style: none;
+            padding: 0;
+            & li {
+                margin-bottom: 10px;
+            }
+            &-link {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 14px;
+                color: var(--white);
+                &:hover {
+                    color: var(--purple);
+                    text-decoration: underline;
+                }
+            }
+        }
+        &-block-3-list {
+            list-style: none;
+            padding: 0;
+            & li {
+                margin-bottom: 10px;
+            }
+            &-link {
+                text-decoration: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 14px;
+                color: var(--white);
+                &:hover {
+                    color: var(--purple);
+                    text-decoration: underline;
+                }
+            }
+        }
+        &-block-4-h2 {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: var(--white);
+            padding-bottom: 20px;
+        }
+        &-block-4-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &-input {
+                font-family: 'blogger', 'Arial', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                width: 287px;
+                background: transparent;
+                border-radius: 5px;
+                border: 1px solid var(--purple);
+                padding: 20px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                color: var(--white);
+                &:focus {
+                    outline: none;
+                }
+            }
+            &-button {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                color: var(--white);
+                background: var(--purple);
+                border-radius: 5px;
+                border: none;
+                padding: 18px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                cursor: pointer;
+                &:hover {
+                    background: var(--blue);
+                    transition: 2s;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-self: center;
+        &-block-4 {
+            grid-column: 1 / -1;
+            padding-top: 50px;
+            &-h2 {
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+        &-block-2-list {
+            border-left: 1px solid var(--white);
+            border-right: 1px solid var(--white);
+            & li {
+                text-align: center;
+            }
+        }   
+        &-block-3-list li {
+            text-align: right;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.main-products-contact {
+    padding: 100px 0 140px;
+    &-h2 {
+        font-weight: 500;
+        font-size: 44px;
+        line-height: 52px;
+        text-align: center;
+        color: var(--black);
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    &-form {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-input {
+            font-family: 'blogger', 'Arial', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            width: 503px;
+            background: var(--white);
+            border-radius: 5px;
+            border: none;
+            padding: 30px 0 30px 30px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            &:focus {
+                outline: none;
+            }
+        }
+        &-button {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            color: var(--white);
+            background: var(--purple);
+            border-radius: 5px;
+            border: none;
+            padding: 27px 49px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            cursor: pointer;
+            &:hover {
+                background: var(--blue);
+                transition: 2s;
+            }
+        }
+    }
+}

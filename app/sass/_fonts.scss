@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'blogger';
+    src: url('../fonts/bloggersans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/bloggersans-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blogger';
+    src: url('../fonts/bloggersans-light-webfont.woff2') format('woff2'),
+         url('../fonts/bloggersans-light-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'blogger';
+    src: url('../fonts/bloggersans-medium-webfont.woff2') format('woff2'),
+         url('../fonts/bloggersans-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
